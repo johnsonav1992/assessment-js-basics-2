@@ -34,7 +34,7 @@ const cart = [
 ]
 
 //CODE HERE
-const summedPrice = cart.map(item => item.price).reduce((total, item) => total + item, 0)
+const summedPrice = cart.reduce((total, item) => total + item.price, 0)
 console.log(summedPrice)
 
 
